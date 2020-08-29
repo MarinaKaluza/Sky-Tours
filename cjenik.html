@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sky tours</title>
+	<link rel="icon" type="image/png" href="slike/ikona.png">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    
+	<link href="style.css" rel="stylesheet" type="text/css">
+	
+  </head>
+  <body>
+	<!--   Navigacija  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-dark sticky-top">
+		<div class="container-fluid">
+			
+			<a href="index.html" class="navbar-brand"> <img src="slike/logo.svg" alt="logo" height="50px"></a>
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+				</span> 
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Naslovna</a>
+					</li>
+					<li class="nav-item dropdown">
+        				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ponuda</a>
+        				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          					<a class="dropdown-item" href="brodice.html">Brodice</a>
+          					<a class="dropdown-item" href="jedrilice.html">Jedrilice</a>
+    				</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="cjenik.html">Cjenik</a>
+                    </li>
+                    <li class="nav-item">
+						<a class="nav-link" href="kontakt.html">Kontakt</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="recenzije.php?action=read">Recenzije</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+    </nav>
+	  
+	<div class="container contents">
+        <!-- tablica cijena -->
+		<div class="row">
+			<div class="col-md-4">
+				<br>
+				<div class="container-fluid">
+				<div class="col-12">
+					<p>Dva razdoblja:
+					<ul>
+						<li>Obična sezona - do 1.7. i nakon 20.8.</li>
+						<li>Visoka sezona - od 1.7. do 20.8.</li>
+					</ul>
+				</p>
+				<p>U tablicama su prikazane cijene po danu za različite periode i različito trajanje najma.</p>
+				<p>	Ako se vaš traženi period nalazi na prijelazu između sezona, onda se računa postotak obične i postotak
+					visoke sezone ovisno koliko dana se nalazi u kojem razdoblju.</p>	
+				</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<p>
+					<table class="table-bordered text-center tablica">
+						<thead><tr>
+								<td>&nbsp;</td><td>Obična sezona</td><td>Visoka sezona</td><td>Broj dana</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td colspan="4">Brodice</td></tr>
+							<!-- Leidi 660 -->
+								<tr><td rowspan="3"><b>Leidi 660</b></td>
+										<td class="tab_red">230€</td>
+										<td class="tab_red">270€</td>
+										<td class="tab_red">1</td>	</tr>
+								<tr class="tab_dat">	<td >220€</td><td>265€</td><td>2-4</td>	</tr>
+								<tr class="tab_red">	<td>210€</td><td>260€</td><td>> 4</td>	</tr>
+							<!-- Leidi 800 -->
+								<tr><td rowspan="3"><b>Leidi 800</b></td>
+										<td class="tab_dat">500€</td>
+										<td class="tab_dat">570€</td>	
+										<td class="tab_dat">1</td>	</tr>
+								<tr  class="tab_red">	<td>490€</td><td>565€</td>	<td>2-4</td>	</tr>
+								<tr class="tab_dat">	<td>480€</td><td>560€</td><td>> 4</td>	</tr>
+							<!-- Antares OB 9 -->
+								<tr><td rowspan="3"><b>Antares OB 9</b></td>
+										<td class="tab_red">750€</td>
+										<td class="tab_red">820€</td>
+										<td class="tab_red">1</td>	</tr>
+								<tr class="tab_dat">	<td>740€</td><td>815€</td><td>2-4</td>	</tr>
+								<tr  class="tab_red">	<td>730€</td><td>810€</td>	<td>> 4</td>	</tr>
+							<!-- Eleven -->
+								<tr><td rowspan="3"><b>Pičuljan eleven</b></td>
+										<td class="tab_dat">1100€</td>
+										<td class="tab_dat">1220€</td>	
+										<td class="tab_dat">2-4</td>	</tr>
+								<tr class="tab_red">	<td>1090€</td><td>1215€</td>	<td>5-8</td>	</tr>
+								<tr class="tab_dat">	<td>1080€</td><td>1210€</td>	<td>> 8</td>	</tr>
+						</tbody>
+					</table>
+				</p>
+	  		</div>
+	  		<div class="col-md-4">
+				<p>
+					<table class="table-bordered text-center tablica">
+						<thead><tr>
+								<td>&nbsp;</td><td>Obična sezona</td><td>Visoka sezona</td><td>Broj dana</td>	
+							</tr>
+						</thead>
+						<tbody>
+							<tr><td colspan="4">Jedrilice</td></tr>
+							<!-- Oceanis 30.1 -->
+								<tr><td rowspan="3"><b>Oceanis 30.1</b></td>
+										<td  class="tab_red">800€</td>
+										<td  class="tab_red">870€</td>
+										<td  class="tab_red">2-4</td></tr>
+								<tr class="tab_dat">	<td>790€</td><td>860€</td><td>5-8</td>	</tr>
+								<tr  class="tab_red">	<td>780€</td><td>855€</td><td>> 8</td>	</tr>
+							<!-- Oceanis 38.1 -->
+								<tr><td rowspan="3"><b>Oceanis 38.1</b></td>
+										<td class="tab_dat">1100€</td>
+										<td class="tab_dat">1200€</td>
+										<td class="tab_dat">2-4</td>	</tr>
+								<tr  class="tab_red">	<td>1090€</td><td>1190€</td><td>5-8</td>	</tr>
+								<tr class="tab_dat">	<td>1080€</td><td>1180€</td><td>> 8</td>	</tr>
+							<!-- Oceanis 54 -->
+								<tr><td rowspan="3"><b>Oceanis 38.1</b></td>
+										<td  class="tab_red">1550€</td>
+										<td  class="tab_red">1620€</td>	
+										<td  class="tab_red">2-4</td>	</tr>
+								<tr class="tab_dat">	<td>1540€</td><td>1600€</td><td>5-8</td>	</tr>
+								<tr  class="tab_red">	<td>1530€</td><td>1590€</td><td>> 8</td>	</tr>
+							
+						</tbody>
+					</table>
+				</p>
+	  		</div>
+		</div>
+		<br><hr>
+		
+		<!-- video -->
+		<div class="container-fluid">
+			<div class="row text-center">
+				<div class="col-12">
+						<p><br>Ako i vi želite ovakve uspomene, <a href="kontakt.html">kontaktirajte</a> nas. <br>
+							<b>Mi ispunjavamo vaše želje.</b><img src="slike/ikona.PNG" alt="ikona" width="30"></p>
+				</div>
+        		<div class="col-12">
+            		<video controls loop class="tablica">
+                		<source src="slike/video.mp4" type="video/mp4">
+						Video
+            		</video>
+					<p>Music: www.bensound.com</p>
+        		</div>
+			</div>
+		</div>
+		<hr><br>
+	</div>
+	
+	
+	<footer>
+		<div class="container bg-light">
+			<div class="row text-center">
+				<div class="col-12 footer_moj">
+					<p>&copy; Marina Kaluža</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	  
+	  
+	  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
